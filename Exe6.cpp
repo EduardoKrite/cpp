@@ -1,18 +1,42 @@
-#include <iostream>/*
-Tendo como dado de entrada a altura (h) de uma pessoa, construa um algoritmo que calcule seu peso ideal,
-utilizando as seguintes fórmulas: Para homens: (72.7h) - 58 Para mulheres: (62.1h) - 44.7*/
+#include <iostream>
+/*
+Faça um Programa que leia três números e mostre o maior deles.
+e
+Faça um Programa que leia três números e mostre o maior e o menor deles.
+*/
 using namespace std;
 
 int main(){
-    float altura, pesoH, pesoM;
-    cout << "Digite a sua altura:....";
-    cin>>altura;
-    pesoH = (72.7*altura) - 58;
-    pesoM = (62.1 *altura) - 44.7;
+    int num1,num2,num3;
+    cout << "Digite um numero:......";
+    cin >> num1;
 
-    cout << "Seu peso ideal de um Homem:......" << pesoH << endl;
-    cout << "SEu peso ideal de um Mulher:....." <<pesoM <<endl;
+    cout << "Digite um numero:......";
+    cin >> num2;
 
+    cout << "Digite um numero:......";
+    cin >> num3;
 
+    if (num1>num2&&num1>num3){
+        cout << "Digite o numero maior é:....."<<num1<<endl;
+
+    }else if (num2>num1&&num2>num3){
+        cout << "Digite o numero maior é:....."<<num2<<endl;
+
+    }else if (num3>num1&&num3>num2){
+        cout << "Digite o numero maior é:....."<<num3<<endl;
+
+    }
+
+    if (num1<num2&&num1<num3){
+        cout << "Digite o numero menor é:....."<<num1;
+
+    }else if (num2<num1&&num2<num3){
+        cout << "Digite o numero menor é:....."<<num2;
+
+    }else if (num3<num1&&num3<num2){
+        cout << "Digite o numero menor é:....."<<num3;
+
+    }
     return 0;
 }

@@ -1,26 +1,28 @@
 #include <iostream>
-/*João Papo-de-Pescador, homem de bem, comprou um microcomputador para controlar o rendimento diário de seu trabalho.
-
-Toda vez que ele traz um peso de peixes maior que o estabelecido pelo regulamento de pesca do estado de São Paulo
-(50 quilos) deve pagar uma multa de R$ 4,00 por quilo excedente.
-
-João precisa que você faça um programa que leia a variável peso (peso de peixes) e calcule o excesso.
-
-Gravar na variável excesso a quantidade de quilos além do limite e na variável multa
-o valor da multa que João deverá pagar. Imprima os dados do programa com as mensagens adequadas.*/
+/*
+Faça um programa que pergunte o preço de três produtos e
+informe qual produto você deve comprar, sabendo que a decisão é sempre pelo mais barato.
+*/
 using namespace std;
 
 int main(){
-    float pescado, media;
+    int Arroz, Feijao,Batata;
+    cout << "digite do arroz e o valor:.....";
+    cin>> Arroz;
 
-    cout << "Digite a quantidade de peixe pescado:......";
-    cin >> pescado;
+    cout << "digite do Feijao e o valor:.....";
+    cin>> Feijao;
 
-    if(pescado>=51){
-        media=pescado*4;
-        cout<< "vc exedeu o limite de peixe vc vai pagar:...." << media<<"R$ de imposto" <<endl;
-    }else
-        cout << "Parabens vc não exedeu o limite ";
+    cout << "digite do Batata e o valor:....";
+    cin>> Batata;
+
+    if(Arroz<Feijao&& Arroz<Batata){
+        cout << "O valor do arroz esta parado  compre primeiro:....."<< Arroz;
+    }else if(Feijao<Arroz&& Feijao<Batata){
+        cout << "O valor do feijao esta parado  compre primeiro:....." <<Feijao;
+    }else if(Batata<Arroz&& Batata<Feijao){
+        cout << "O valor do batata esta parado  compre primeiro:....."<<Batata;
+    }
 
     return 0;
 }
